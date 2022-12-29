@@ -1,0 +1,15 @@
+@import url(./bootstrap.min.css);
+
+.contenedor{
+    display: flex;
+  }
+.card{
+    margin: 20px;
+  }
+
+table{
+  backdrop-filter: blur(10px);
+
+}
+
+

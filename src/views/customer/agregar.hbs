@@ -1,0 +1,20 @@
+<h1>Bienvenido a Innovis Eventos</h1>
+<h2>Registre datos de cliente</h2>
+<div>
+  <div>
+    <form action="/api/customers/add" method="post">
+
+      <div><div>Nombre:</div><input type="text" name="fname" id="fname" /></div>
+      <div><div>Apellido:</div><input type="text" name="lname" id="lname" /></div>
+      <div><div>DNI:</div><input type="number" name="dni" id="dni" /></div>
+      <div><div>Direccion:</div><input type="text" name="address" id="address" /></div>
+      <div><div>Numero de domicilio:</div><input type="number" name="numAddress" id="numAddress" /></div>
+      <div><div>Numero postal:</div><input type="number" name="postalNum" id="postalNum" /></div>
+
+      <button class="btn btn-success" type="submit">enviar</button>
+
+      <a class="btn btn-secondary btn-sm" role="button" href="/api/customers">volver</a>
+
+    </form>
+  </div>
+</div>

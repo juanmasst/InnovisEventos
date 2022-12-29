@@ -1,0 +1,22 @@
+<h1>Lista de clientes</h1>
+
+<ul>
+    {{#each customer}}
+      <li>
+        <table>
+          <tr>
+            <td scope="row">{{_id}}</td>
+            <td scope="row">{{fname}}</td>
+            <td scope="row">{{lname}}</td>
+            <td scope="row">
+              <form action="/api/customers/edit/{{_id}}" method="get">
+              <button class="btn btn-info btn-sm" class="submit">Editar</button>
+              </form>
+              </td>
+          </tr>
+        </table>
+      </li>
+    {{/each}}
+</ul>
+
+<a class="btn btn-success" role="button" href="/api/customers/add">Agregar</a>
